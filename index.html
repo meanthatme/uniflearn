@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="reset.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="header.css" rel="stylesheet" type="text/css" />
+    <link href="contents.css" rel="stylesheet" type="text/css" />
+    <link href="footer.css" rel="stylesheet" type="text/css" />
     <title>uniflearn</title>
 </head>
 <body>
-    안녕하세요^^
-
-    저도 커밋했습니다~ ^^
-
-
-    저도요222
+    <div id="header"></div>
+    <div id="contents"></div>
+    <div id="footer"></div>
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script> 
+    <script type="text/javascript">   
+        $(document).ready( function() { 
+            $("#header").load("./header.html");
+            $("#contents").load("./contents.html");
+            $("#footer").load("./footer.html");
+        });     
+    </script>
 </body>
 </html>
